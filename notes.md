@@ -21,52 +21,54 @@ Example: (input --> output)
 
 # Domain
 
-    Receber um dos lados de uma sequencia de DNA
-    Deve retornar o outro lado do DNA, seguindo as regras
-        A tem como complemento T 
-        G tem como complemento C 
-    Nenhuma sequencia deve ter espaços vazio ou não conter um DNA
+    Receiving one side of a DNA sequence
+    Must return the other side of the DNA, following the rules
+        A has as complement T
+        G has as complement C
+    No sequence should have empty spaces or not contain a sequence of DNA
     
 # Entities
-    Determinar Sequencia
-        Sequencia Entrada
-        Sequencia Saida
+    DNA
+        Input Sequence
+        Output Sequence
         
-        função para determinar sequencia
-        funções para validar entrada
-            - validar valor em branco
-            - validar valor nulo ou vazio
-            - validar que todas as entradas sejam A, C, G, T
+        function to determine sequence
+        functions to validate input
+            - validate blank value
+            - validate null or empty value
+            - validate that all entries are A, C, G, T
 
 # Pomodoro 1 ( 14-12-22 - 25min / 5min pause)
     Create git project ✅
     Determine domain ✅
     Determine Entities ✅
     Create initial node project structure ✅
-    Adicionado test para validar se o sequence retornado é o mesmo que o retornado ✅
+    should be return a "sequence" equal to the "input sequence" ✅
     
 # Pomodoro 2 ( 14-12-22 - 25min / 5min pause)
-    Adicionado teste para validar se sequencias com espaço são retorna sem espaço em branco ✅
-    Adicionado teste para validar se sequencias com multiplos espaço em branco ✅
-    Adicionado teste para validar se a sequencia não é vazia ✅
-    Adicionado teste para validar se a sequencia não é nula ✅
+    shold be return a "sequence" with no whitespace ✅
+    should be return a sequence with multiple whitespaces in a sequence without whitespace ✅
+    should validate that a string is not empty ✅
+    should validate that a string is not null ✅
 
 # Pomodoro 3 ( 15-12-22 - 25min / 5min pause)
-    relembrar oq foi feito no dia anterior ✅
-    Adicionar teste para validar se a sequencia contem apenas A,C,G,T ✅
-    refactoring nas validações que estão no contrutor para metodos ✅
+    remember the last work day ✅
+    should validate if a sequence contains only A, C, G, T ✅
+    refactoring validate methods to functions ✅
 
 # Pomodoro 4 ( 15-12-22 - 25min / 5min pause)  
-    adicionar teste para trocar de A em T ✅
-    adicionar teste para trocar de T em A ✅
-    adicionar teste para trocar de C em G ✅
-    adicionar teste para trocar de G em C ✅
+    should be validated if 'A' was changed to 'T' ✅
+    should be validated if 'T' was changed to 'A' ✅
+    should be validated if 'C' was changed to 'G' ✅
+    should be validated if 'G' was changed to 'C' ✅
 
 # Pomodoro 5 ( 15-12-22 - 25min / 5min pause) 
-    adicionar teste para trocar de AG em TC ✅
+    should be validated if 'AG' was changed to 'TC' ✅
 
-    WTF : Adicionei os 2 testes abaixo para garantir que a sequencia estava correta
-    adicionar teste para trocar ATTGC em TAACG ✅
-    adicionar teste para trocar GTAT em CATA ✅
-    remover codigo desnecessario
-    traduzir o notes para ingles 
+    WTF : I added the 2 tests below to make sure the sequence was correct, but I didn't get test failures; 
+
+    should be validated if 'ATTGC' was changed to 'TAACG' ✅
+    should be validated if 'GTAT' was changed to 'CATA' ✅
+
+    remove unnecessary code  ✅
+    translate notes to English ✅
