@@ -29,12 +29,21 @@ describe('Determine DNA Tests', () => {
         expect(dna.sequence).toBe("TAACG");
     });
 
-    test("should be return error when ricive an empty sequence", async () => {
+    test("should be return error when receive an empty sequence", async () => {
         let sequence = "";
         let dna = () => { new DNA(sequence); }
         let error = 'Parameter is empty or null'
 
         expect(dna).toThrow(error);
     });
+
+    test("should be return error when receive an null sequence", async () => {
+        let sequence = null;
+        let dna = () => { new DNA(sequence); }
+        let error = 'Parameter is empty or null'
+
+        expect(dna).toThrow(error);
+    });
+
 
 });
