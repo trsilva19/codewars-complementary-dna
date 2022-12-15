@@ -2,7 +2,7 @@ module.exports = class DNA {
 
     constructor(sequence) {
         
-        this.sequence = sequence;
+        this.inputSequence = sequence;
 
         this.sequenceIsEmptyOrNull();
         this.replaceSpace();
@@ -10,19 +10,21 @@ module.exports = class DNA {
  
     }
 
+    sequenceDNA() { }
+
     // Functions to Validate 
     sequenceIsEmptyOrNull() {
-        if (typeof this.sequence === "undefined" || this.sequence === null || this.sequence === "") {
+        if (typeof this.inputSequence === "undefined" || this.inputSequence === null || this.inputSequence === "") {
             throw new TypeError('Parameter is empty or null');
         }
     }
 
     replaceSpace(){
-        this.sequence = this.sequence.replace(/\s/g, "");
+        this.inputSequence = this.inputSequence.replace(/\s/g, "");
     }
 
     sequenceIsInvalid() {
-        if (this.sequence.match(/^[AaCcGgTt>]*$/) === null) {
+        if (this.inputSequence.match(/^[AaCcGgTt>]*$/) === null) {
             throw new TypeError('Sequence is not valid');
         } 
     }

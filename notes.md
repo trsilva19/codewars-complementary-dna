@@ -53,4 +53,8 @@ Example: (input --> output)
 
 # Pomodoro 3 ( 15-12-22 - 25min / 5min pause)
     relembrar oq foi feito no dia anterior ✅
-    Adicionar teste para validar se a sequencia contem apenas A,C,G,T 🚧
+    Adicionar teste para validar se a sequencia contem apenas A,C,G,T ✅
+    refactoring nas validações que estão no contrutor para metodos ✅
+
+# Pomodoro 4 ( 15-12-22 - 25min / 5min pause)  
+    adicionar teste para trocar de A em C 
