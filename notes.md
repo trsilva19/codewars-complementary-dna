@@ -46,4 +46,6 @@ Example: (input --> output)
     Adicionado test para validar se o sequence retornado é o mesmo que o retornado ✅
     
 # Pomodoro 2 ( 14-12-22 - 25min / 5min pause)
-    Adicionado teste para valiser se sequencias com espaço são retorna sem espaço em branco ✅
+    Adicionado teste para validar se sequencias com espaço são retorna sem espaço em branco ✅
+    Adicionado teste para validar se sequencias com multiplos espaço em branco 
+    Adicionado teste para validar se a sequencia não é vazia 
