@@ -93,4 +93,14 @@ describe('Determine DNA Tests', () => {
         expect(dna.outputSequence).toBe(output);
     });
 
+    test("should be return error when receive AG and return TC", async () => {
+        let sequence = 'AG';
+        let output = 'TC';
+
+        let dna = new DNA(sequence);
+        dna.sequenceDNA();
+
+        expect(dna.outputSequence).toBe(output);
+    });
+
 });
