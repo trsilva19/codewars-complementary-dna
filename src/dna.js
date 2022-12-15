@@ -10,7 +10,19 @@ module.exports = class DNA {
  
     }
 
-    sequenceDNA() { }
+    sequenceDNA() { 
+        if(this.inputSequence === 'A') {
+            this.outputSequence = 'T';
+        }
+
+        if(this.inputSequence === 'T') {
+            this.outputSequence = 'A';
+        }
+
+        if(this.inputSequence === 'C') {
+            this.outputSequence = 'G';
+        }
+    }
 
     // Functions to Validate 
     sequenceIsEmptyOrNull() {
