@@ -13,7 +13,6 @@ module.exports = class DNA {
     sequenceDNA() { 
         this.outputSequence = "";
         for (let val of this.inputSequence) {
-            console.log(val);
             switch (val) {
                 case 'A':
                     val = 'T';

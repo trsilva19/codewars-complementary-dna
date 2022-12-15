@@ -64,4 +64,9 @@ Example: (input --> output)
 
 # Pomodoro 5 ( 15-12-22 - 25min / 5min pause) 
     adicionar teste para trocar de AG em TC ✅
-    adicionar teste para trocar ATTGC em TAACG
+
+    WTF : Adicionei os 2 testes abaixo para garantir que a sequencia estava correta
+    adicionar teste para trocar ATTGC em TAACG ✅
+    adicionar teste para trocar GTAT em CATA ✅
+    remover codigo desnecessario
+    traduzir o notes para ingles 
