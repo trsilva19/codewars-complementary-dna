@@ -1,7 +1,7 @@
 module.exports = class DNA {
 
     constructor(sequence) {
-        this.sequence = sequence;
+        this.sequence = sequence.replace(" ", "");
     }
 
 }
