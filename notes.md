@@ -57,4 +57,11 @@ Example: (input --> output)
     refactoring nas validações que estão no contrutor para metodos ✅
 
 # Pomodoro 4 ( 15-12-22 - 25min / 5min pause)  
-    adicionar teste para trocar de A em C 
+    adicionar teste para trocar de A em T ✅
+    adicionar teste para trocar de T em A ✅
+    adicionar teste para trocar de C em G ✅
+    adicionar teste para trocar de G em C ✅
+
+# Pomodoro 5 ( 15-12-22 - 25min / 5min pause) 
+    adicionar teste para trocar de AG em TC ✅
+    adicionar teste para trocar ATTGC em TAACG

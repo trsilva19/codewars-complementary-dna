@@ -11,21 +11,42 @@ module.exports = class DNA {
     }
 
     sequenceDNA() { 
-        if(this.inputSequence === 'A') {
-            this.outputSequence = 'T';
+        this.outputSequence = "";
+        for (let val of this.inputSequence) {
+            console.log(val);
+            switch (val) {
+                case 'A':
+                    val = 'T';
+                    break;
+                case 'T':
+                    val = 'A';
+                    break;
+                case 'C': 
+                    val = 'G';
+                    break;
+                case 'G':
+                    val = 'C';
+                    break;
+            }
+
+            this.outputSequence += val;
         }
 
-        if(this.inputSequence === 'T') {
-            this.outputSequence = 'A';
-        }
+        // if(this.inputSequence === 'A') {
+        //     this.outputSequence = 'T';
+        // }
 
-        if(this.inputSequence === 'C') {
-            this.outputSequence = 'G';
-        }
+        // if(this.inputSequence === 'T') {
+        //     this.outputSequence = 'A';
+        // }
 
-        if(this.inputSequence === 'G') {
-            this.outputSequence = 'C';
-        }
+        // if(this.inputSequence === 'C') {
+        //     this.outputSequence = 'G';
+        // }
+
+        // if(this.inputSequence === 'G') {
+        //     this.outputSequence = 'C';
+        // }
     }
 
     // Functions to Validate 
