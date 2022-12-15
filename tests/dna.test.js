@@ -32,7 +32,7 @@ describe('Determine DNA Tests', () => {
     test("should be return error when receive an empty sequence", async () => {
         let sequence = "";
         let dna = () => { new DNA(sequence); }
-        let error = 'Parameter is empty or null'
+        let error = 'Parameter is empty or null';
 
         expect(dna).toThrow(error);
     });
@@ -40,15 +40,15 @@ describe('Determine DNA Tests', () => {
     test("should be return error when receive an null sequence", async () => {
         let sequence = null;
         let dna = () => { new DNA(sequence); }
-        let error = 'Parameter is empty or null'
+        let error = 'Parameter is empty or null';
 
         expect(dna).toThrow(error);
     });
 
     test("should be return error when receive a sequence dosnt contain only A, C, G, T", async () => {
-        let sequence = ABCD;
+        let sequence = 'BDEF';
         let dna = () => { new DNA(sequence); }
-        let error = 'Sequence is not valid'
+        let error = 'Sequence is not valid';
 
         expect(dna).toThrow(error);
     });
