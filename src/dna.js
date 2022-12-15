@@ -1,7 +1,7 @@
 module.exports = class DNA {
 
     constructor(sequence) {
-        if (sequence === "") {
+        if (typeof sequence === "undefined" || sequence === null || sequence === "") {
             throw new TypeError('Parameter is empty or null');
         }
 
