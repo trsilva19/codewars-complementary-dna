@@ -45,6 +45,13 @@ describe('Determine DNA Tests', () => {
         expect(dna).toThrow(error);
     });
 
-    
+    test("should be return error when receive a sequence dosnt contain only A, C, G, T", async () => {
+        let sequence = ABCD;
+        let dna = () => { new DNA(sequence); }
+        let error = 'Sequence is not valid'
+
+        expect(dna).toThrow(error);
+    });
+
 
 });
