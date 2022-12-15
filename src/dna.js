@@ -22,6 +22,10 @@ module.exports = class DNA {
         if(this.inputSequence === 'C') {
             this.outputSequence = 'G';
         }
+
+        if(this.inputSequence === 'G') {
+            this.outputSequence = 'C';
+        }
     }
 
     // Functions to Validate 

@@ -53,7 +53,7 @@ describe('Determine DNA Tests', () => {
         expect(dna).toThrow(error);
     });
 
-    test("should be return error when receive a A and return T", async () => {
+    test("should be return error when receive A and return T", async () => {
         let sequence = 'A';
         let output = 'T';
 
@@ -63,7 +63,7 @@ describe('Determine DNA Tests', () => {
         expect(dna.outputSequence).toBe(output);
     });
 
-    test("should be return error when receive a T and return A", async () => {
+    test("should be return error when receive T and return A", async () => {
         let sequence = 'T';
         let output = 'A';
 
@@ -73,9 +73,19 @@ describe('Determine DNA Tests', () => {
         expect(dna.outputSequence).toBe(output);
     });
 
-    test("should be return error when receive a C and return G", async () => {
+    test("should be return error when receive C and return G", async () => {
         let sequence = 'C';
         let output = 'G';
+
+        let dna = new DNA(sequence);
+        dna.sequenceDNA();
+
+        expect(dna.outputSequence).toBe(output);
+    });
+
+    test("should be return error when receive G and return C", async () => {
+        let sequence = 'G';
+        let output = 'C';
 
         let dna = new DNA(sequence);
         dna.sequenceDNA();
