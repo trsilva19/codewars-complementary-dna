@@ -8,4 +8,11 @@ describe('Determine DNA Tests', () => {
         expect(dna.sequence).toBe(sequence);
     });
 
+    test("should be return sequence without space", async () => {
+        let sequence = "TA ACG";
+        let dna = new DNA(sequence);
+
+        expect(dna.sequence).toBe("TAACG");
+    });
+
 });
